@@ -1,0 +1,273 @@
+// Please delete before starting
+ num = 5 px;
+ t = 5 px
+
+div
+	padding:num;
+	width:70%;
+	max-width:700px;
+	min-width:400px;
+	margin: 0px auto;
+
+body
+	display:block;
+	width:90%;
+	padding: num;
+	margin: num auto;
+	background-color:#164B69;
+	text-align:center;
+	font-size:14px;
+	font-style arial
+
+.win
+	width:100%;
+	background-color:#E3E3E3
+	
+.grid-content
+	display:grid;
+	width:100%;
+	margin:auto;
+	grid-template-columns:repeat(6, 1fr);
+	background-color:#E3E3E3
+	justify-items stretch
+	align-items: center
+
+
+a
+	color:black;
+	margin: num auto;
+	padding:num;
+	font-weight:bold;
+	text-decoration:none;
+
+	&:hover
+		color:white;
+		background-color:green
+		font-weight:bold;
+		text-decoration:none;
+
+	&:focus
+		background-color:#DCDCDC
+		color:black;
+		font-weight:bold;
+		text-decoration:none;
+	
+
+	
+p
+	text-align:justify
+	margin: t
+	padding: t
+	
+span
+	width:100%;
+	margin: 0px auto;
+
+.grid-content .img1
+	align-items: center
+	padding num
+	margin:num auto;
+	width:inherit;
+	grid-column:5/7;
+	grid-row:3/4;
+
+.grid-content .text_3
+	grid-column:3/7;
+	grid-row:3/4;
+	height:32%;
+	background-color: grey;
+	align-self: start;
+.grid-content .text_3.alcenter
+	align-self: center;
+.grid-content .text_3.alend
+	align-self: end;
+.grid-content .text_2
+	grid-column:1/3;
+	grid-row:3/4
+	height:600px;
+	background-color: grey;
+
+.active{
+	background-color: black;
+	color: white;
+}
+.grid-content .text_6
+	grid-column:1/5;
+	grid-row:3/4;
+.video
+	width:100%
+	grid-column:1/7;
+	grid-row:4/5;
+	
+.grid-content > .img2
+	align-items: center
+	padding num
+	margin:num auto;
+	width:inherit;
+	grid-column:1/3;
+	grid-row:2/3;
+
+.grid-content > .img3
+	align-items: center
+	padding num
+	margin:num auto;
+	width:inherit;
+	grid-column:3/5;
+	grid-row:2/3;
+	
+.grid-content > .img4
+	align-items: center
+	padding num
+	margin:num auto;
+	width:inherit;
+	grid-column:5/7;
+	grid-row:2/3;
+
+.grid-content .text1
+	grid-column:1/7;
+	grid-row:2/3;
+
+.grid-content .text2
+	grid-column:1/5;
+	grid-row:3/4;
+
+.menu1
+	width:100%;
+	grid-column:1/2;
+	grid-row:1/2;
+
+.menu2
+	width:100%;
+	grid-column:2/3;
+	grid-row:1/2;
+
+.menu3
+	width:100%;
+	grid-column:3/4;
+	grid-row:1/2;
+	
+.menu4
+	width:100%;
+	grid-column:4/5;
+	grid-row:1/2;
+
+.menu5
+	width:100%;
+	grid-column:5/6;
+	grid-row:1/2;
+
+.menu6
+	width:100%;
+	grid-column:6/7;
+	grid-row:1/2;
+
+@media (max-width: 600px)
+	.grid-content
+		display:grid;
+		width:100%;
+		margin:auto;
+		grid-template-columns:repeat(2, 1fr);
+		grid-template-rows:repeat(auto, auto);
+		grid-gap:num
+		background-color:#E3E3E3
+		justify-items stretch
+		align-items: center
+		
+	.menu1
+		width:100%;
+		grid-column:1/2;
+		grid-row:1/2;
+
+	.menu2
+		width:100%;
+		grid-column:2/3;
+		grid-row:1/2;
+
+	.menu3
+		width:100%;
+		grid-column:1/2;
+		grid-row:2/3;
+		
+	.menu4
+		width:100%;
+		grid-column:2/3;
+		grid-row:2/3;
+
+	.menu5
+		width:100%;
+		grid-column:1/2;
+		grid-row:3/4;
+
+	.menu6
+		width:100%;
+		grid-column:2/3;
+		grid-row:3/4;
+		
+	.grid-content .img1
+		align-items: center
+		padding num
+		margin:num auto;
+		width:inherit;
+		grid-column:1/3;
+		grid-row:3/4;
+	.video
+		width:100%
+		grid-column:1/3;
+		grid-row:5/6;
+		
+	.grid-content > .img2
+		align-items: center
+		padding num
+		margin:num auto;
+		width:inherit;
+		grid-column:1/3;
+		grid-row:2/3;
+		
+	.grid-content .text2
+		grid-column:1/2;
+		grid-row:3/4;
+		
+	.grid-content > .img3
+		align-items: center
+		padding num
+		margin:num auto;
+		width:inherit;
+		grid-column:1/3;
+		grid-row:3/4;
+		
+	.grid-content > .img4
+		align-items: center
+		padding num
+		margin:num auto;
+		width:inherit;
+		grid-column:1/3;
+		grid-row:4/5;
+	
+	.grid-content .text_3
+		grid-column:1/3;
+		grid-row:5/7;
+		display: none;
+		height: auto;
+		
+	.grid-content .text_3.sta
+		display: grid;
+		grid-row:7/7;
+	.grid-content .text_3.alcenter
+		display: grid;
+		grid-row:8/9;
+	.grid-content .text_3.alend
+		display: block;
+		grid-row:9/9;
+
+	.grid-content .text_2
+		grid-column:1/3;
+		grid-row:5/7;
+		height: auto;
+
+
+	.grid-content .text_6
+		grid-column:1/3;
+		grid-row:5/6;
+	
+
+	

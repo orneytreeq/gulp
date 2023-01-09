@@ -1,0 +1,20 @@
+extends menu
+mixin draw
+	img.img2(src="css-probely.png")
+	img.img3(src="css-text.png")
+	img.img4(src="css-text-decoration.png")
+	
+block menu
+	a.menu1(href="index.html") CSS
+	a.menu2(href="index_3.html") Синтаксис CSS
+	a.menu3(href="#") Вставка CSS
+	a.menu4(href="#") CSS текст
+	a.menu5.active(href="index_2.html") CSS шрифт
+	a.menu6(href="#") Блоки
+block body
+		span.grid-content
+			+draw
+		p Свойство font - универсальное свойство, позволяющее одновременно задать несколько свойств шрифта. <br> font - универсальное свойство, которое позволяет одновременно задать несколько характеристик шрифта и текста. <br> Синтаксис
+		p <kbd> font: [font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit </kbd> 
+		p font-style - определяет начертание шрифта: обычное, курсивное или наклонное. Когда для текста установлено курсивное или наклонное начертание, браузер обращается к системе для поиска подходящего шрифта. Если заданный шрифт не найден, браузер использует специальный алгоритм для имитации нужного вида текста. Результат и качество при этом могут получиться неудовлетворительными, особенно при печати документа. <br> Синтаксис 
+		p <kbd> font-style: normal | italic | oblique | inherit </kbd>
